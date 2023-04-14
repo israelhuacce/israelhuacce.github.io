@@ -1,6 +1,6 @@
 body {
     font-family: canela deck;
-    text-align: center;
+    text-align: justify;
     background-color: #f6f5f1;
     margin: none;
 }
@@ -53,8 +53,12 @@ h1 {
 img {
     text-align: center;
 }
-
-
-
-
-
+.main{
+    text-align: center;
+    
+}
+.momento {
+    margin-right: 80px;
+    margin-left: 80px;
+    font-size: large;
+}
