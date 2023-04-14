@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.centrado { text-align: center;
+}
