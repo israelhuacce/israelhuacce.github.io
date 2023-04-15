@@ -1,8 +1,8 @@
 body {
     font-family: canela deck;
-    text-align: center;
+    text-align: ;
     background-color: #f6f5f1;
-    margin: none;
+    margin:none;
 }
 /*
 Inicio de el header
@@ -48,19 +48,38 @@ a {
     nav {
         padding: 10px 0px;
     }
+
 }
 /*
 fin del header
 */
-
-h1 {
-    font-size: 15mm;
+main {
+    margin-left: 15%;
+    margin-right: 15%;
 }
-img {
+h1 {
     text-align: center;
 }
+@media (max-width: 700px){
+    body {
+        font-family: canela deck;
+    }
+    main {
 
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    h2 {
+        text-align: left;
+    }
+}
 
-
-
-
+.estilostablas{
+    font-size: 14px;
+    border: 1px solid black;
+    min-width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.has-text-align-center {
+    text-align: center;
+}

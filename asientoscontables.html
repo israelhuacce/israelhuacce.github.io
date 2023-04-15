@@ -4,86 +4,361 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Asientos contables más usados </title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/CSS/publicaciones.css">
 </head>
 <body>
     <header>
-        <img src="" alt="">
-        <a href="index.html"> Mi jardín digital</a>
+        <a href="index.html"> <img class="logo" src="assets/Foto de perfil icon.png" alt="logo"></a>
+        <nav>
+            <a href="" class="navlink"> Jardín digital </a>
+            <a href="ahora.html" class="navlink"> Ahora</a>
+            <a href="acercademi.html" class="navlink"> Acerca de mí</a>
+        </nav>
     </header>
 
     <main>
         <h1> Asientos contables más usados</h1>
-        <p>
-            Existen algunas operaciones y transacciones que la mayoría de las empresas incurre. Aquí se te presentará los asientos contables más ... 
-        </p>
         <section>
-            <h2> Temario</h2>
+            <h2 id="listadecontenido"> Lista de contenido</h2>
             <ul>
-                <li><a href="#almacenamiento"> Almacenamiento y desalmacenamiento de existencias</a></li>
+                <li><a href="#almacenamiento" style="scroll-behavior:smooth;"> Almacenamiento y desalmacenamiento de existencias</a></li>
                 <li><a href="#anticipos-recibidos" style="scroll-behavior: smooth;"> Anticipos recibidos de los clientes</a></li>
+                <li><a href="#ajusteporcostodeventas" style="scroll-behavior: smooth;"> Ajuste por costo de ventas</a></li>
+                <li><a href="#4">Cambio de factura a letra por pagar con interés</a> </li>
+                <li><a href="#5">Cambio de factura a letra por cobrar con interés</a></li>
+                <li><a href="#6">Capitalización de donaciones, reservas y utilidades no repartidas</a></li>
+                <li><a href="#7">Cobro de indemnización por seguros</a></li>
+                <li><a href="#8"></a></li>
+                <li><a href="#9"></a></li>
             </ul>
         </section>
+        <article>
+            <h2 id="almacenamiento"> Almacenamiento y desalmacenamiento de existencias</h2>
+            <p> 
+                <figure> 
+                    <table class="estilostablas">
+                        <thead >
+                            <tr>
+                                <th class="has-text-align-center" data-align="center"> <strong> CUENTA</strong> </th>
+                                <th></th>
+                                <th class="has-text-align-center" data-align="center"> <strong> DEBE</strong></th>
+                                <th class="has-text-align-center" data-align="center"><strong> HABER</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center"><strong>20 </strong></td>
+                                <td> <strong> Mercaderías </strong></td>
+                                <td class="has-text-align-center" data-align="center"> xxx</td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center"></td><td>2011 - Mercaderías </td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center"><strong>61</strong></td>
+                                <td> <strong> Variación de inventarios </strong></td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                                <td class="has-text-align-center" data-align="center"> xxx</td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center"></td>
+                                <td> 6111 - Mercaderías </td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center"></td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center"></td>
 
-        <h2 id="almacenamiento"> Almacenamiento y desalmacenamiento de existencias</h2>
-        <p> 
-            Operaciones de compra, permuta o trueque que den origen al activo "Existencias-Mercaderías"
-            <br> Se registra de la siguiente forma :
-            <pre>
-                <code>
-                    2011    xxx
-                    6111        xxx 
+                                <td class="has-text-align-center" data-align="center"></td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 
-                    x/x Por el almacenamiento de la mercaderías.
-                </code>
-            </pre>       
-        Operaciones como devoluciones de mercaderías por estar en mal estado dan origen al <strong>desalmacenamiento</strong>. No confundir con el asiento de costo de ventas.
-            <pre>
-                <code>
-                    6111    xxx
-                    2011        xxx
-    
-                    x/x Por el desalmacenamiento de la mercaderías.
-                </code>
-            </pre>
-        Observación : El asiento de desalmacenamiento es inverso al almacenamiento. Para los demás activos será igual, tan solo cambiaran las cuentas contables.
-        <br> Algunos ejemplos : <br> <br>    
-        En caso de <strong> materias primas </strong> :
-            <pre>
-                <code>
-                    2411    xxx
-                    6121        xxx 
-            
-                x/x Por el almacenamiento de las materias primas.
-                </code>
-            </pre> 
-        En caso de <strong> repuestos  </strong> :
-            <pre>
-                <code>
-                    253    xxx
-                    6133        xxx 
-            
-                x/x Por el almacenamiento de los repuestos.
-                </code>
-            </pre> 
-        En caso de <strong> suministros diversos  </strong> :
-            <pre>
-                <code>
-                    2511    xxx
-                    6132        xxx 
-            
-                x/x Por el almacenamiento de los suministros diversos.
-                </code>
-            </pre>
-        </p>
-   
+                    <br>
+                    <mark>x/x Por el almacenamiento de las mercaderías. </mark>  
+                </figure>   
+                <figure> 
+                    <table class="estilostablas">
+                        <thead >
+                            <tr>
+                                <th class="has-text-align-center" data-align="center"> <strong> CUENTA</strong> </th>
+                                <th></th>
+                                <th class="has-text-align-center" data-align="center"> <strong> DEBE</strong></th>
+                                <th class="has-text-align-center" data-align="center"><strong> HABER</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center"><strong> 61 </strong></td>
+                                <td> <strong> Variación de inventarios</strong></td>
+                                <td class="has-text-align-center" data-align="center"> xxx</td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center"></td><td>6111 - Mercaderías </td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center"><strong>20</strong></td>
+                                <td> <strong> Mercaderías </strong></td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                                <td class="has-text-align-center" data-align="center"> xxx</td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center"></td>
+                                <td> 2011 - Mercaderías </td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center"></td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-align-center" data-align="center"></td>
 
+                                <td class="has-text-align-center" data-align="center"></td>
+                                <td class="has-text-align-center" data-align="center"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+                    <br>
+                    <mark>x/x Por el desalmacenamiento de las mercaderías. </mark>  
+                </figure> 
+    
+            <strong> Observación : </strong> Todo asiento de desalmacenamiento es inverso al almacenamiento. 
+            <br>     
+            <figure> 
+                <table class="estilostablas">
+                    <thead >
+                        <tr>
+                            <th class="has-text-align-center" data-align="center"> <strong> CUENTA</strong> </th>
+                            <th></th>
+                            <th class="has-text-align-center" data-align="center"> <strong> DEBE</strong></th>
+                            <th class="has-text-align-center" data-align="center"><strong> HABER</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center"><strong>24 </strong></td>
+                            <td> <strong> Materias primas </strong></td>
+                            <td class="has-text-align-center" data-align="center"> xxx</td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center"></td><td>2411 - Materias primas </td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center"><strong> 61</strong></td>
+                            <td> <strong> Variación de inventarios </strong></td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                            <td class="has-text-align-center" data-align="center"> xxx</td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center"></td>
+                            <td> 6121 - Materias primas </td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center"></td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center"></td>
+
+                            <td class="has-text-align-center" data-align="center"></td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <mark>x/x Por el almacenamiento de las materias primas. </mark>  
+            </figure> 
+            <figure> 
+                <table class="estilostablas">
+                    <thead >
+                        <tr>
+                            <th class="has-text-align-center" data-align="center"> <strong> CUENTA</strong> </th>
+                            <th></th>
+                            <th class="has-text-align-center" data-align="center"> <strong> DEBE</strong></th>
+                            <th class="has-text-align-center" data-align="center"><strong> HABER</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center"><strong>25 </strong></td>
+                            <td> <strong> Materiales auxiliares, suministros y repuestos </strong></td>
+                            <td class="has-text-align-center" data-align="center"> xxx</td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center"></td><td>253 - Repuestos </td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center"><strong> 61</strong></td>
+                            <td> <strong> Variación de inventarios </strong></td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                            <td class="has-text-align-center" data-align="center"> xxx</td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center"></td>
+                            <td> 6133 - Repuestos </td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center"></td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                        </tr>
+                        <tr>
+                            <td class="has-text-align-center" data-align="center"></td>
+
+                            <td class="has-text-align-center" data-align="center"></td>
+                            <td class="has-text-align-center" data-align="center"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <mark>x/x Por el almacenamiento de los repuestos. </mark>  
+            </figure> 
+            <a class="enlace-inicio" style="scroll-behavior:smooth" href="#listadecontenido"> Volver a la lista de contenido</a>
+        </article>
         <hr>
         <h2 id="anticipos-recibidos"> Anticipos recibidos de los clientes   </h2>
-        <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quo, saepe fugiat, odio fugit culpa a maiores eum reprehenderit facere in blanditiis ad, incidunt harum? Amet quasi aut repellendus maxime.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellendus molestias facere, aperiam accusantium voluptatem, ipsam possimus saepe ad voluptatum earum nostrum alias sed voluptatibus sit voluptas blanditiis? Tempora, debitis.
-            r><br>
-        <img src="assets/en construccion.gif" alt="en construccion">
+        <figure> 
+            <table class="estilostablas">
+                <thead >
+                    <tr>
+                        <th class="has-text-align-center" data-align="center"> <strong> CUENTA</strong> </th>
+                        <th></th>
+                        <th class="has-text-align-center" data-align="center"> <strong> DEBE</strong></th>
+                        <th class="has-text-align-center" data-align="center"><strong> HABER</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="has-text-align-center" data-align="center"><strong> 10.. </strong></td>
+                        <td> Efectivo y equivalente de efectivo</td>
+                        <td class="has-text-align-center" data-align="center"> xxx</td>
+                        <td class="has-text-align-center" data-align="center"></td>
+                    </tr>
+                    <tr>
+                        <td class="has-text-align-center" data-align="center"><strong>4011</strong></td>
+                        <td> IGV - Cuenta propia</td>
+                        <td class="has-text-align-center" data-align="center"></td>
+                        <td class="has-text-align-center" data-align="center"> xxx</td>
+                    </tr>
+                    <tr>
+                        <td class="has-text-align-center" data-align="center"><strong>122</strong></td>
+                        <td> Anticipos de clientes</td>
+                        <td class="has-text-align-center" data-align="center"></td>
+                        <td class="has-text-align-center" data-align="center"> xxx</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><mark>x/x Por la recepción de los anticipo. </mark>  
+        </figure> 
+
+        <figure> 
+            <table class="estilostablas">
+                <thead >
+                    <tr>
+                        <th class="has-text-align-center" data-align="center"> <strong> CUENTA</strong> </th>
+                        <th></th>
+                        <th class="has-text-align-center" data-align="center"> <strong> DEBE</strong></th>
+                        <th class="has-text-align-center" data-align="center"><strong> HABER</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="has-text-align-center" data-align="center"><strong> 122 </strong></td>
+                        <td> Anticipos de clientes</td>
+                        <td class="has-text-align-center" data-align="center"> xxx</td>
+                        <td class="has-text-align-center" data-align="center"></td>
+                    </tr>
+                    <tr>
+                        <td class="has-text-align-center" data-align="center"><strong>7012</strong></td>
+                        <td> Mercaderías - venta local </td>
+                        <td class="has-text-align-center" data-align="center"></td>
+                        <td class="has-text-align-center" data-align="center"> xxx</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><mark>x/x Por la entrega de las mercaderías por el anticipo recibido. </mark>  
+        </figure>   
+
+        <figure> 
+            <table class="estilostablas">
+                <thead >
+                    <tr>
+                        <th class="has-text-align-center" data-align="center"> <strong> CUENTA</strong> </th>
+                        <th></th>
+                        <th class="has-text-align-center" data-align="center"> <strong> DEBE</strong></th>
+                        <th class="has-text-align-center" data-align="center"><strong> HABER</strong></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="has-text-align-center" data-align="center"><strong>691</strong></td>
+                        <td> Mercaderías</td>
+                        <td class="has-text-align-center" data-align="center"> xxx</td>
+                        <td class="has-text-align-center" data-align="center"></td>
+                    </tr>
+                    <tr>
+                        <td class="has-text-align-center" data-align="center"><strong>2011</strong></td>
+                        <td> Mercaderías</td>
+                        <td class="has-text-align-center" data-align="center"></td>
+                        <td class="has-text-align-center" data-align="center"> xxx</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><mark>x/x Por el costo de ventas </mark>  
+        </figure>
+        <a class="enlace-inicio" style="scroll-behavior:smooth" href="#listadecontenido"> Volver a la lista de contenido</a>
+        <hr>
+        <h2 id="ajusteporcostodeventas"> Ajuste por costo de ventas</h2>
+        <a class="enlace-inicio" style="scroll-behavior:smooth" href="#listadecontenido"> Volver a la lista de contenido</a>
+        <hr>
+        <h2 id="4"> Cambio de factura a letra por pagar con interés</h2>
+        <a class="enlace-inicio" style="scroll-behavior:smooth" href="#listadecontenido"> Volver a la lista de contenido</a>
+        <hr>
+
+
+        <h2 id="5"> Cambio de factura a letra por cobrar con interés</h2>
+        <a class="enlace-inicio" style="scroll-behavior:smooth" href="#listadecontenido"> Volver a la lista de contenido</a>
+        <hr>
+
+        <h2 id="6">Capitalización de donaciones, reservas y utilidades no repartidas </h2>
+        <a class="enlace-inicio" style="scroll-behavior:smooth" href="#listadecontenido"> Volver a la lista de contenido</a>
+        <hr>
+
+        <h2 id="7">Cobro de indemnización por seguros</h2>
+        <a class="enlace-inicio" style="scroll-behavior:smooth" href="#listadecontenido"> Volver a la lista de contenido</a>
+        <hr>
+
+
+
+
+
+
+
+
+        <img src="assets/en construccion.gif" alt="en construccion" height="50px">
         
         
         
