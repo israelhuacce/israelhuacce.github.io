@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+* {
+    font-family: 'PT Serif', serif;
+}
 body {
     font-family: canela deck;
     text-align: justify;
@@ -14,7 +18,7 @@ header {
     background-color: #f6f5f1;
     padding: 10px;
     align-items: center;
-    font-size: 18px;
+    font-size: 13px;
 }
 
 .logo {
@@ -48,10 +52,11 @@ fin del header
 */
 
 h1 {
-    font-size: 15mm;
+    font-size: 11mm;
 }
 img {
-    text-align: center
+    text-align: center;
+    border-radius: 10%;
 }
 .main{
     text-align: center;
@@ -83,9 +88,11 @@ img {
         margin-left: 13px;
     }
     .description {
+        font-size: medium;
+        text-align: justify;
         padding: 10px 0px;
         margin-top: 30px;
-        margin-right: 50px ;
-        margin-left: 50px;
+        margin-right: 2%;
+        margin-left: 2%;
     }
 }
