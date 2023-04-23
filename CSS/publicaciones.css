@@ -58,27 +58,54 @@ a {
 /*
 fin del header
 */
-
-
-
 main {
-    margin-left: 15%;
-    margin-right: 15%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1 {
     text-align: center;
+    font-size: 45px;
 }
+
+h2 {
+    font-size: 30px;
+}
+figure {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+/* metadatos de notas */
+
+.datos {
+    text-align: center;
+}
+.resumen {
+    text-align: justify;
+    font-size: 15px;
+    background-color: ;
+}
+
+/* fin de metadatos */
 @media (max-width: 700px){
     body {
         font-family: canela deck;
     }
     main {
-        text-align: left;
+        width: 100%;
+        text-align: center;
         margin-left: 0.5%;
         margin-right: 0.5%;
     }
+    h1 { 
+        font-size: 33px
+    }
     h2 {
         text-align: left;
+    }
+    figure {
+        margin-left: 1%;
+        margin-right: 1%;
     }
     .estilostablas{
         margin-left: 0%;
@@ -86,6 +113,16 @@ h1 {
     .lista {
         text-align: left;
     }
+    .enlace-inicio {
+        width: 99%;
+
+    }
+
+    /* metadatos */
+    .resumen { 
+        font-size: 13px;
+    }
+    
 }
 
 
