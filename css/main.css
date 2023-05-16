@@ -1,0 +1,278 @@
+/* Font */
+@font-face {
+    font-family: "MotivaSansThin";
+    src: url(../fonts/MotivaSansThin.woff) format("woff");
+    font-display: swap;
+};
+
+/* reset */
+html, body {
+    margin: 0;
+    border: 0;
+    font: inherit;
+    height: 100px;
+    /* font-family: "MotivaSansThin", sans-serif; */
+}
+/* Variables */
+:root {
+    --color-columna: linear-gradient( #0c1f50, #182041, black) ;
+    --color-cajas: #191f40;
+    --color-juego: #090b18;
+    --enlaces: #fff;
+    /* --bordes-prueba: 2px solid black; */
+    --tamaño-fuente-títulos: 18px;
+}
+
+/* configurando body */
+body {
+    font-size: 12px;
+    width: 1000px;
+    height: 1000px;
+    max-height: 1000px;
+    margin-left: auto; 
+    margin-right: auto;
+    /* entra para poner en columnas */
+    display: flex;
+    color: var(--enlaces);
+    font-family: "MotivaSansThin";
+    
+
+}
+
+
+/* Columna 1 y 2 */
+.columna-1 {
+    background: var(--color-columna);
+    height: 900px;
+    width: 75%;
+    border: var(--bordes-prueba);
+    padding: 1rem;
+    border-radius: 16px;
+}
+
+.columna-2 {
+    background: var(--color-columna);
+    height: 900px;
+    width: 25%;
+    border: var(--bordes-prueba);
+    padding: 1rem;
+    border-radius: 16px 16px;
+}
+
+/* Fondo  */
+
+
+body {
+    background-color: black;
+    background-image: url(../assets/img/chinese-recortado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /*resolvió mi problema para que bloquee el alejamiento*/
+}
+
+/* -----CÓDIGO COLUMNA 1------------- */
+/* Avatar y descripción */
+.avatar img {
+    width: 130px;
+    height: 130px;
+    /* padding-left: 16px;
+    padding-top: 10px; */
+    border-radius: 16px;
+}
+.information-user {
+    display: flex;
+    background-color: var(--color-juego);
+    border-radius: 16px;
+    height: 140px;
+    padding: 10px;
+}
+.nickname-description {
+    margin-left: 10px;
+    padding-left: 1em;
+    background-color: var(--color-juego);
+    border-radius: 16px;
+}
+.nickname {
+    font-size: xx-large;
+    margin: 0;
+}
+/* Actividad reciente */
+
+.actividad-reciente {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-cajas);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.actividad-reciente p {
+    font-size: 15px;
+}
+/* CAJA-JUEGOS */
+.caja-juegos {
+    height: 500px;
+    border: var(--bordes-prueba);
+}
+
+/* Juego-logros */
+.juego-logro {
+    height: 160px; /*cambiar-aqui-tamaño*/
+    border: var(--bordes-prueba);
+    margin: 0px;
+    background-color: var(--color-juego);
+    border-radius: 16px;
+    padding: 16px;
+}
+.parte-1 {
+    height: 65%;
+    border: var(--bordes-prueba);
+    display: flex;
+    justify-content: ;
+}
+
+.hero {
+    height: 100px;
+    width: 300px;
+}
+.picture-name {
+    display: flex;
+    justify-content: left;
+    width: 70%;
+    border: var(--bordes-prueba);
+}
+.name {
+    font-size: 17px;
+    padding-left: 10px;
+}
+.tiempo {
+    text-align: right;
+    padding: none;
+    width: 190px;
+}
+.parte-2 {
+    height: 35%;
+    border: var(--bordes-prueba);
+    display: flex;
+    justify-content: space-between;
+    padding: ;
+}
+
+.cantidad-logros {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    padding: 5px;
+    border: var(--bordes-prueba);
+}
+.todos-logros img {
+    width: 30px;
+}
+.logros-medio {
+    width: 300px;
+    border: var(--bordes-prueba);
+}
+/* Juegos sin logros */
+.juego-sin-logro {
+    height: 120px; /*cambiar-aqui-tamaño*/
+    border: var(--bordes-prueba);
+    margin: 0px;
+    background-color: var(--color-juego);
+    border-radius: 16px;
+    padding: 16px;
+}
+.parte-1-sin {
+    height: 100%;
+    border: var(--bordes-prueba);
+    display: flex;
+    justify-content: ;
+}
+
+.hero-sin {
+    height: 100px;
+    width: 300px;
+}
+.picture-name-sin {
+    display: flex;
+    justify-content: left;
+    width: 70%;
+    border: var(--bordes-prueba);
+}
+.name-sin {
+    font-size: 17px;
+    padding-left: 10px;
+}
+.tiempo-sin {
+    text-align: right;
+    padding: none;
+    width: 190px;
+}
+
+
+/* --OTROS ESTILOS-- */
+
+/* Enlace */
+.enlace {
+    text-decoration: none;
+    color: var(--enlaces);
+}
+.enlace:hover {
+    color: cornflowerblue;
+}
+
+/* COLUMNA 2 */
+
+/* Niveles */
+
+.nivel {
+    font-size: xx-large;
+    border: var(--bordes-prueba);
+    text-align: center;
+    margin: 0;
+}
+
+/* Insignia destacada */
+.insignia-destacada {
+    width: 210px;
+    height: 60px;
+    background-color: var(--color-juego);
+    border-radius: 16px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    display: flex;
+}
+
+.insignia {
+    width: 50px;
+}
+
+/* Informacion */
+.information {
+    width: 210px;
+    background-color: var(--color-juego);
+    padding-top: 1px;
+    padding-left: 30px;
+    border-radius: 16px;
+    padding-bottom: 1px;
+}
+
+.data {
+    font-size: large;
+}
+.data-2 {
+    font-size: x-large;
+}
+
+.links {
+    width: 20px;
+}
+
+/* Caja de ver toda la actividad */
+.caja-enlace {
+    text-align: center;
+}
+
+/* Header */
+.footer {
+    text-align: center;
+}
